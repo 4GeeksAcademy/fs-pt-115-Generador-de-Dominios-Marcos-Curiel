@@ -49,3 +49,7 @@ button:hover:after {
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
+#domainResult{
+	font-size: 2rem;
+	color: aqua;
+}
