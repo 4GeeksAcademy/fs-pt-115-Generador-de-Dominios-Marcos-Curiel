@@ -31,15 +31,15 @@ function filterDomainExtesion(extension) {
 // Función que activa los dominios en el DOM
 function displayDomains(domains, extension) {
 	const resultsDomain = document.getElementById("domainResult");
-	resultsDomain.className = "container-fluid mt-4"
+	resultsDomain.className = "container mt-4"
 
-	// Separa los domios en columnas individuales
+	// Separar los dominios en columnas individuales
 	const domainsPerColumn = Math.ceil(domains.length / 3);
 	const column1 = domains.slice(0, domainsPerColumn);
 	const column2 = domains.slice(domainsPerColumn, domainsPerColumn * 2);
 	const column3 = domains.slice(domainsPerColumn * 2);
 
-	//Html que genera Dominios
+	//inner.Html de los dominios
 	resultsDomain.innerHTML = `
         <div class="row">
             <div class="col-12">
@@ -68,11 +68,7 @@ function displayDomains(domains, extension) {
             <section class="col-12 col-md-4">
                 <div class="border p-3 h-100">
                     <h5 class="text-center mb-3">Mal</h5>
-                    ${column3.map(domain => `
-                        <div class="mb-2 p-2 bg-secondary rounded">
-                            ${domain}
-                        </div>
-                    `).join('')}
+                    ${column3.map(domain => `<div class="mb-2 p-2 bg-secondary rounded">${domain} </div>`).join('')}
                 </div>
             </section>
         </div>
@@ -85,30 +81,35 @@ domainCom.addEventListener("click", function () {
 	const getDomainCom = filterDomainExtesion(".com");
 	displayDomains(getDomainCom, ".com");
 });
+
 // Boton dominios.info
 let domainInfo = document.getElementById("btnInfo");
 domainInfo.addEventListener("click", function () {
 	const getDomainInfo = filterDomainExtesion(".info");
 	displayDomains(getDomainInfo, ".info");
 });
+
 // Boton dominios .Net
 let domainNet = document.getElementById("btnNet");
 domainNet.addEventListener("click", function () {
 	const getDomainNet = filterDomainExtesion(".net");
 	displayDomains(getDomainNet, ".net");
 });
+
 // Boton dominios .org
 let domainOrg = document.getElementById("btnOrg");
 domainOrg.addEventListener("click", function () {
 	const getDomainOrg = filterDomainExtesion(".org");
 	displayDomains(getDomainOrg, ".org");
 });
+
 // Boton dominios .biz
 let domainBiz = document.getElementById("btnBiz");
 domainBiz.addEventListener("click", function () {
 	const getDomainBiz = filterDomainExtesion(".biz");
 	displayDomains(getDomainBiz, ".biz");
 });
+
 // Boton dominios .edu
 let domainEdu = document.getElementById("btnEdu");
 domainEdu.addEventListener("click", function () {
