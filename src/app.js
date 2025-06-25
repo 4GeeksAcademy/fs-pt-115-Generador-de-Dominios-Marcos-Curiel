@@ -46,26 +46,26 @@ function displayDomains(domains, extension) {
         <div class="row">
 
 			<!-- Columna 1 --!>
-            <section class="col-12 col-md-4">
+            <section class="col-12 col-sm-6 col-md-4">
                 <div class="border p-3 h-100">
                     <h5 class="text-center mb-3">Alcides</h5>
-                    ${column1.map(domain => `<div class="mb-2 p-2 bg-secondary rounded">${domain}</div>`).join('')}
+                    ${column1.map(domain => `<div class="mb-2 p-2 bg-secondary rounded text-center">${domain}</div>`).join('')}
                 </div>
             </section>
             
             <!-- Columna 2 --!>
-            <section class="col-12 col-md-4">
+            <section class="col-12 col-sm-6 col-md-4">
                 <div class="border p-3 h-100">
                     <h5 class="text-center mb-3">Me caes</h5>
-                    ${column2.map(domain => `<div class="mb-2 p-2 bg-secondary rounded">${domain}</div>`).join('')}
+                    ${column2.map(domain => `<div class="mb-2 p-2 bg-secondary rounded text-center">${domain}</div>`).join('')}
                 </div>
             </section>
             
             <!-- Columna 3 --!>
-            <section class="col-12 col-md-4">
+            <section class="col-12 col-sm-6 col-md-4">
                 <div class="border p-3 h-100">
                     <h5 class="text-center mb-3">Mal</h5>
-                    ${column3.map(domain => `<div class="mb-2 p-2 bg-secondary rounded">${domain} </div>`).join('')}
+                    ${column3.map(domain => `<div class="mb-2 p-2 bg-secondary rounded text-center">${domain} </div>`).join('')}
                 </div>
             </section>
         </div>
