@@ -1,7 +1,5 @@
 import "bootstrap";
 import "./style.css";
-
-
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
@@ -25,7 +23,6 @@ const allDomains = pronoun.flatMap(pronouns =>
 // Filtrar dominion por extensión
 function filterDomainExtesion(extension) {
 	return allDomains.filter(domain => domain.endsWith(extension));
-
 }
 
 // Función que activa los dominios en el DOM
@@ -116,6 +113,3 @@ domainEdu.addEventListener("click", function () {
 	const getDomainEdu = filterDomainExtesion(".edu");
 	displayDomains(getDomainEdu, ".edu");
 });
-
-
-
