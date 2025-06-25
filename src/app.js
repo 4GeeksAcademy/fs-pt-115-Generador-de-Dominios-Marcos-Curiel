@@ -20,7 +20,7 @@ const allDomains = pronoun.flatMap(pronouns =>
 	)
 );
 
-// Filtrar dominion por extensión
+// Filtrar dominios por extensión
 function filterDomainExtesion(extension) {
 	return allDomains.filter(domain => domain.endsWith(extension));
 }
